@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Mockup</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: #f7f8fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #e8f7ff, #fff7d6);
+      padding: 72px 0 56px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #ffffff;
+      border: 1px solid #dbeafe;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: 44px;
+      line-height: 1.15;
+    }
+    .hero p {
+      margin: 0 0 22px;
+      font-size: 17px;
+      color: #4b5563;
+    }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      color: #111827;
+    }
+    .btn.primary {
+      background: #111827;
+      color: white;
+      border-color: #111827;
+    }
+    .profile-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(17,24,39,0.06);
+    }
+    .avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c7f0ff, #ffe79f);
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    section {
+      padding: 56px 0;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 28px;
+    }
+    .section-desc {
+      margin: 0 0 24px;
+      color: #6b7280;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(17,24,39,0.04);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .tag {
+      font-size: 13px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #374151;
+    }
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+    .timeline-item {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 18px 20px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    footer {
+      padding: 36px 0 60px;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .hero, .cards, .two-col {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div>
+        <span class="badge">GIS · Data Analysis · Smart Factory</span>
+        <h1>데이터로 문제를 구조화하고,<br />현장에 적용 가능한 인사이트를 만듭니다.</h1>
+        <p>
+          공간데이터 분석, 제조 데이터 분석, 머신비전 프로젝트를 수행하며
+          문제 정의부터 분석, 시각화, 결과 정리까지 연결해온 포트폴리오입니다.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="btn primary">프로젝트 보기</a>
+          <a href="#contact" class="btn">연락하기</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="avatar">DK</div>
+        <h3 style="margin:0 0 8px;">김다정</h3>
+        <p style="margin:0 0 14px; color:#6b7280;">
+          GIS 기반 분석과 Python 데이터 처리 역량을 바탕으로
+          제조, 모빌리티, 스마트팩토리 분야의 문제 해결에 관심이 있습니다.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">QGIS</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Machine Vision</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="section-desc">
+        데이터를 단순히 정리하는 데서 끝나지 않고, 현상의 원인을 설명하고 개선 방향까지 제시하는 분석가를 지향합니다.
+      </p>
+      <div class="two-col">
+        <div class="card">
+          <h3>강점</h3>
+          <p>공간 분석과 제조 데이터 분석을 함께 다룰 수 있으며, 기술적인 분석 결과를 문서와 시각화로 구조화하는 데 익숙합니다.</p>
+        </div>
+        <div class="card">
+          <h3>관심 분야</h3>
+          <p>스마트팩토리, 품질관리, 경로 최적화, 디지털 트윈, 머신비전 기반 산업 문제 해결에 관심이 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="section-desc">대표 프로젝트를 간단하게 정리한 목업입니다.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>3차원 도시 모형 기반 119 접근성 분석</h3>
+          <p>도로망과 건물 내부 이동을 통합해 구조 시간을 분석하고, 고층 건물 내 위치별 접근성 차이를 시각화했습니다.</p>
+          <div class="tags">
+            <span class="tag">GIS</span>
+            <span class="tag">A*</span>
+            <span class="tag">Unity</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>제조 데이터 기반 OEE 분석</h3>
+          <p>라인별 가동률, 성능률, 양품률을 분석해 병목 설비를 도출하고, 개선 전후 효율 변화를 데이터로 검증했습니다.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">OEE</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>머신비전 기반 캐리어 배치 시스템</h3>
+          <p>객체 검출과 OBB 계산을 통해 짐의 크기와 방향을 추정하고, 효율적인 배치 시각화를 구현했습니다.</p>
+          <div class="tags">
+            <span class="tag">YOLO</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">React</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>석사 · 지리학 전공</strong>
+          <div style="color:#6b7280;">공간 분석, 네트워크 분석, 3D GIS 연구 수행</div>
+        </div>
+        <div class="timeline-item">
+          <strong>스마트팩토리 / 제조 데이터 분석 프로젝트</strong>
+          <div style="color:#6b7280;">공정 효율, 품질관리, 설비 데이터 기반 문제 해결 경험</div>
+        </div>
+        <div class="timeline-item">
+          <strong>머신비전 및 실시간 분석 UI 구현</strong>
+          <div style="color:#6b7280;">탐지 결과 시각화와 대시보드 구성 경험</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Data</h3>
+          <p>Python, Pandas, NumPy, SQL, EDA, 시계열 분석, 품질 지표 분석</p>
+        </div>
+        <div class="card">
+          <h3>GIS</h3>
+          <p>QGIS, 공간 분석, 네트워크 분석, 경로 탐색, 시각화</p>
+        </div>
+        <div class="card">
+          <h3>Vision / Frontend</h3>
+          <p>YOLO, OpenCV, React, Vite, WebSocket 기반 데이터 시각화</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email</strong> your-email@example.com</p>
+        <p><strong>GitHub</strong> github.com/your-id</p>
+        <p><strong>Notion / Blog</strong> portfolio link</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2026 Portfolio Mockup. Draft for customization.</div>
+  </footer>
+</body>
+</html>
